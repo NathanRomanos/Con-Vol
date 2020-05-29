@@ -43,15 +43,14 @@
         add_action( 'primary', 'wpdocs_register_my_custom_menu_page' );
       ?>
       </div>
-      <div class="">
+      <div class="bruh">
         <?php get_sidebar('primary'); ?>
-      </div>
-
-      <div class="cv-sidebarButton">
-        &#9776;
-      </div>
-      <div class="cv-sidebarClose">
-        &times;
+        <div class="cv-sidebarButton">
+          &#9776;
+        </div>
+        <div class="cv-sidebarClose">
+          &times;
+        </div>
       </div>
     </header>
 

@@ -48,7 +48,7 @@ register_nav_menus(
   function themename_custom_logo_setup() {
    $defaults = array(
    'height'      => 100,
-   'width'       => 400,
+   'width'       => 300,
    'flex-height' => false,
    'flex-width'  => false,
    'header-text' => array( 'site-title', 'site-description' ),
@@ -95,13 +95,8 @@ register_nav_menus(
   add_theme_support( 'post-thumbnails' );
 
 
-
-
-
-
-  //test
-  require get_template_directory() . '/includes/starter-content.php';
-	add_theme_support( 'starter-content', twentytwenty_get_starter_content() );
+  //customize API
+  require_once get_template_directory() . '/customizer.php';
 
 
 ?>

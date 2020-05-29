@@ -1,4 +1,4 @@
-    <footer class="cv-footer jumbotron">
+    <footer class="cv-footer">
       <div>copyright@2020</div>
       <div class="">
         <?php
@@ -6,7 +6,7 @@
           array(
           'theme_location' => 'footer-menu',
           'menu' => 'Social Links Menu',
-          'menu_class' => 'cv-topMenu'
+          'menu_class' => 'cv-bottomMenu'
           )
         );
         ?>

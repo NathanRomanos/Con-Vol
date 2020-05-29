@@ -10,12 +10,6 @@
 
     <?php get_template_part('includes/section','content'); ?>
 
-    <p>Please let this be editable</p>
-
-    <?php
-    echo twentytwenty_get_starter_content();
-    ?>
-
   </div>
 
 <?php get_footer(); ?>

@@ -201,7 +201,7 @@ ol ol ol {
 
 li {
 	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	margin: 0.5rem 0;
 }
 
 li > ul,
@@ -246,6 +246,7 @@ dd + dt {
 
 ul{
   padding-inline-start: 0;
+  list-style: none;
 }
 
 a {
@@ -258,10 +259,17 @@ a:focus {
   color: #fc8c03;
 }
 
+::placeholder{
+	color: white;
+}
+
 
 
 .cv-banner{
   position: relative;
+  width: 100%;
+  min-height: 300px;
+	margin: 50px 0;
 }
 
 .cv-title{
@@ -277,17 +285,18 @@ a:focus {
 .cv-header{
   width: 100%;
   height: 160px;
-  border-radius: 10px;
   margin-bottom: 4vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #306f2b;
   color: #fff;
   position: relative;
 }
 
 .cv-footer{
+  width: 100%;
+  min-height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,18 +307,38 @@ a:focus {
 
 .cv-sidebarSecondary{
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 160px;
   z-index: 100;
   color: black;
-  background-color: white;
-  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+	box-shadow: -20px 20px 20px rgba(0,0,0,0.5);
+  padding: 40px;
+  display: none;
+}
+
+.widget{
+  margin-bottom: 50px;
+  text-align: left;
+  list-style: none;
+}
+
+.cv-search{
+  margin-bottom: 0 !important;
+}
+
+.cv-searchBox, .cv-searchBox:focus, .cv-searchBox:visited{
+	border: 0;
+	border-bottom: 4px solid white;
+	background-color: rgba(0,0,0,0);
+	color: #fff;
+}
+
+.cv-searchBtn:hover{
+	color: #fc8c03;
 }
 
 .cv-sidebarButton, .cv-sidebarClose{
-  position: absolute;
-  right: 20px;
-  top: 20px;
   z-index: 100;
   display: none;
   color: white;
@@ -317,7 +346,22 @@ a:focus {
   line-height: 100%;
   font-weight: bolder;
   cursor: pointer;
+	margin-left: 20px;
 }
+
+.cv-sidebarClose{
+  display: none;
+}
+
+.cv-sidebarButton{
+  display: block;
+}
+
+.bruh{
+	display: flex;
+	align-items: center;
+}
+
 
 .cv-sidebarButton:hover, .cv-sidebarClose:hover{
 color: #fc8c03;
@@ -326,7 +370,7 @@ color: #fc8c03;
 
 
 /* Menus */
-.cv-topMenu{
+.cv-topMenu, .cv-bottomMenu{
   list-style: none;
   color: #fff;
   margin: 0 2vw;
@@ -335,17 +379,5 @@ color: #fc8c03;
 .menu-item{
   display: inline;
   margin: 0 20px;
-  color: #fff;
-}
-
-
-
-@media (max-width: 1800px) {
-    .cv-sidebarSecondary{
-      display: none;
-    }
-
-    .cv-sidebarButton{
-      display: block;
-    }
+  /* color: #fff; */
 }
