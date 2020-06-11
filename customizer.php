@@ -18,7 +18,7 @@
 
     // Title Text Colour---------------------------------------------------------------------------
     $wp_customize->add_setting( 'cv-titleTextColour' , array(
-        'default'   => '#fc8c03',
+        'default'   => '#fff',
         'transport' => 'refresh',
     ) );
 
@@ -37,7 +37,7 @@
     ));
 
     $wp_customize->add_setting('cv-headerColour' , array(
-      'default' => '#306f2b',
+      'default' => '#333',
       'transport' => 'refresh',
     ));
 
@@ -70,7 +70,7 @@
     ));
 
     $wp_customize->add_setting('cv-footerColour' , array(
-      'default' => '#306f2b',
+      'default' => '#333',
       'transport' => 'refresh',
     ));
 
@@ -108,16 +108,16 @@
               background-color: <?php echo get_theme_mod('cv-backgroundColour','#ffffff'); ?>!important;
            }
      .cv-title{
-               color: <?php echo get_theme_mod('cv-titleTextColour', '#fc8c03'); ?>!important ;
+               color: <?php echo get_theme_mod('cv-titleTextColour', '#fff'); ?>!important ;
              }
      .cv-header{
-               background-color: <?php echo get_theme_mod('cv-headerColour', '#306f2b'); ?>!important ;
+               background-color: <?php echo get_theme_mod('cv-headerColour', '#333'); ?>!important ;
              }
      .cv-topMenu, .cv-sidebarButton, .cv-sidebarClose, .cv-searchBox, .cv-searchBox:focus{
                color: <?php echo get_theme_mod('cv-headerTextColour', '#fff'); ?>!important ;
              }
      .cv-footer{
-               background-color: <?php echo get_theme_mod('cv-footerColour', '#306f2b'); ?>!important ;
+               background-color: <?php echo get_theme_mod('cv-footerColour', '#333'); ?>!important ;
              }
      .cv-bottomMenu, .cv-footer{
                color: <?php echo get_theme_mod('cv-footerTextColour', '#fff'); ?>!important ;

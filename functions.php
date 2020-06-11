@@ -44,20 +44,6 @@ register_nav_menus(
   );
 
 
-  //logo
-  function themename_custom_logo_setup() {
-   $defaults = array(
-   'height'      => 100,
-   'width'       => 300,
-   'flex-height' => false,
-   'flex-width'  => false,
-   'header-text' => array( 'site-title', 'site-description' ),
-   );
-   add_theme_support( 'custom-logo', $defaults );
-  }
-  add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
-
-
   //widgets
   add_theme_support('widgets');
 
